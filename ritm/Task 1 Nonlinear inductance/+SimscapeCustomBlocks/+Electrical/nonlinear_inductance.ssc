@@ -1,0 +1,47 @@
+component nonlinear_inductance < foundation.electrical.branch
+% nonlinear_inductance
+% Реализовано только для векторов тока и потока длиной 6
+% Писать компоненты в simcape не приходилось, а здесь довольно много ограничений относительно функционала матлаб. 
+% Найти подходящий индекс в векторе тока, зная значение тока, казалось бы тривиальная задача, но при реализации с помощью функции find 
+% и другими способами столкнулся с тем, что simcape их не поддерживает.
+% Поэтому сделал, как удалось разобраться.
+
+% References
+% https://www.mathworks.com/help/simscape/lang/building-custom-block-libraries-from-simscape-component-files.html
+
+
+parameters
+    Nturns  = 20000;     % Количество витков
+    i_vector  = { [0, .64, 1.28, 1.92, 2.56, 3.2], 'A' };      % Значение тока, А
+    phi_vector  = { [0, 1.29, 2, 2.27, 2.36, 2.39] * 1e-5, 'Wb' }; % Значение потока, Вб
+end
+
+variables
+    i_L = {value = { 0, 'A' }, priority = priority.high}; % Расчетный ток, А
+end
+
+intermediates
+   dphidi_vector = diff(phi_vector) ./ diff(i_vector);
+end
+
+equations
+    assert(length(i_vector)==6);
+    assert(length(phi_vector)==6);
+    assert(Nturns>=0);
+    if length(i_vector) >= 2 & abs(i_L) < i_vector(2)
+        v == Nturns*dphidi_vector(1)*i_L.der;
+    elseif length(i_vector) >= 3 & abs(i_L) >= i_vector(2) & abs(i_L) < i_vector(3)
+        v == Nturns*dphidi_vector(2)*i_L.der;
+    elseif length(i_vector) >= 4 & abs(i_L) >= i_vector(3) & abs(i_L) < i_vector(4)
+        v == Nturns*dphidi_vector(3)*i_L.der;
+    elseif length(i_vector) >= 5 & abs(i_L) >= i_vector(4) & abs(i_L) < i_vector(5)
+        v == Nturns*dphidi_vector(4)*i_L.der;
+    elseif length(i_vector) >= 6 & abs(i_L) >= i_vector(5) & abs(i_L) < i_vector(6)
+        v == Nturns*dphidi_vector(5)*i_L.der;
+    else
+        v == Nturns*dphidi_vector(end)*i_L.der;
+    end
+    i == i_L;
+end
+
+end

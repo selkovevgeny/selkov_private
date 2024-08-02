@@ -1,0 +1,1811 @@
+Model {
+  Name			  "ModelRitm"
+  Version		  9.2
+  SavedCharacterEncoding  "windows-1251"
+  GraphicalInterface {
+    NumRootInports	    0
+    NumRootOutports	    0
+    ParameterArgumentNames  ""
+    ComputedModelVersion    "1.136"
+    NumModelReferences	    0
+    NumTestPointedSignals   0
+    NumProvidedFunctions    0
+    NumRequiredFunctions    0
+    NumResetEvents	    0
+    HasInitializeEvent	    0
+    HasTerminateEvent	    0
+    PreCompExecutionDomainType "Unset"
+    IsExportFunctionModel   0
+    NumParameterArguments   0
+    NumExternalFileReferences 14
+    ExternalFileReference {
+      Reference		      "fl_lib/Electrical/Electrical Sources/Controlled Voltage\nSource"
+      Path		      "ModelRitm/Controlled  Voltage Source"
+      SID		      "349"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "fl_lib/Electrical/Electrical Sources/Controlled Voltage\nSource"
+      Path		      "ModelRitm/Controlled  Voltage Source1"
+      SID		      "354"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "fl_lib/Electrical/Electrical Sensors/Current Sensor"
+      Path		      "ModelRitm/Current Sensor"
+      SID		      "283"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "fl_lib/Electrical/Electrical Sensors/Current Sensor"
+      Path		      "ModelRitm/Current Sensor1"
+      SID		      "355"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "fl_lib/Electrical/Electrical Elements/Electrical Reference"
+      Path		      "ModelRitm/Electrical Reference"
+      SID		      "345"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "fl_lib/Electrical/Electrical Elements/Electrical Reference"
+      Path		      "ModelRitm/Electrical Reference1"
+      SID		      "356"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "pe_lib/Passive Devices/Fundamental\nComponents/Nonlinear Inductor"
+      Path		      "ModelRitm/Nonlinear Inductor"
+      SID		      "280"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "fl_lib/Electrical/Electrical Elements/Resistor"
+      Path		      "ModelRitm/Resistor"
+      SID		      "282"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "fl_lib/Electrical/Electrical Elements/Resistor"
+      Path		      "ModelRitm/Resistor1"
+      SID		      "358"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "nesl_utility/Simulink-PS\nConverter"
+      Path		      "ModelRitm/Simulink-PS Converter"
+      SID		      "340"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "nesl_utility/Solver\nConfiguration"
+      Path		      "ModelRitm/Solver Configuration"
+      SID		      "344"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "nesl_utility/PS-Simulink\nConverter"
+      Path		      "ModelRitm/i custom"
+      SID		      "339"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "nesl_utility/PS-Simulink\nConverter"
+      Path		      "ModelRitm/i lib"
+      SID		      "357"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "SimscapeCustomBlocks_lib/Electrical/nonlinear_inductance"
+      Path		      "ModelRitm/nonlinear_inductance1"
+      SID		      "364"
+      Type		      "LIBRARY_BLOCK"
+    }
+    OrderedModelArguments   1
+  }
+  DiagnosticSuppressor	  "on"
+  WebScopes_FoundationPlugin "on"
+  NotesPlugin		  "on"
+  LogicAnalyzerPlugin	  "on"
+  SLCCPlugin		  "on"
+  Description		  "\n\n\nCopyright 2008-2010 The MathWorks, Inc.\n"
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  DataTypeOverride	  "UseLocalSettings"
+  DataTypeOverrideAppliesTo "AllNumericTypes"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  FPTRunName		  "Run 1"
+  MaxMDLFileLineLength	  120
+  UserBdParams		  "PhysicalModelingChecksum;PhysicalModelingParameterChecksum;PhysicalModelingProducts"
+  LastSavedArchitecture	  "win64"
+  Object {
+    $PropName		    "BdWindowsInfo"
+    $ObjectID		    1
+    $ClassName		    "Simulink.BDWindowsInfo"
+    Object {
+      $PropName		      "WindowsInfo"
+      $ObjectID		      2
+      $ClassName	      "Simulink.WindowInfo"
+      IsActive		      [1]
+      Location		      [1912.0, -8.0, 1936.0, 1056.0]
+      Object {
+	$PropName		"ModelBrowserInfo"
+	$ObjectID		3
+	$ClassName		"Simulink.ModelBrowserInfo"
+	Visible			[0]
+	DockPosition		"Left"
+	Width			[50]
+	Height			[50]
+	Filter			[9]
+      }
+      Object {
+	$PropName		"ExplorerBarInfo"
+	$ObjectID		4
+	$ClassName		"Simulink.ExplorerBarInfo"
+	Visible			[0]
+      }
+      Object {
+	$PropName		"EditorsInfo"
+	$ObjectID		5
+	$ClassName		"Simulink.EditorInfo"
+	IsActive		[1]
+	ViewObjType		"SimulinkTopLevel"
+	LoadSaveID		"0"
+	Extents			[1882.0, 905.0]
+	ZoomFactor		[1.0]
+	Offset			[-745.4227224806607, 26.029461463499729]
+      }
+      Object {
+	$PropName		"DockComponentsInfo"
+	$ObjectID		6
+	$ClassName		"Simulink.DockComponentInfo"
+	Type			"GLUE2:PropertyInspector"
+	ID			"Property Inspector"
+	Visible			[0]
+	CreateCallback		""
+	UserData		""
+	Floating		[0]
+	DockPosition		"Right"
+	Width			[640]
+	Height			[480]
+      }
+      WindowState	      "AAAA/wAAAAD9AAAAAgAAAAAAAAC9AAAB+PwCAAAAA/sAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAA"
+      "AAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0Ac"
+      "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAAP////8AAABjAP///wAAAAEAAAAAAAAAAPwCA"
+      "AAAAfsAAABUAEcATABVAEUAMgA6AFAAcgBvAHAAZQByAHQAeQBJAG4AcwBwAGUAYwB0AG8AcgAvAFAAcgBvAHAAZQByAHQAeQAgAEkAbgBzAHAAZ"
+      "QBjAHQAbwByAAAAAAD/////AAAAOQD///8AAAeAAAADpAAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAP/////wAAAAAA/////wAAAAAAAAAA/"
+      "////wEAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/"
+      "////wEAAAB5/////wAAAAAAAAAA/////wEAAADa/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAFT/////wAAAAAAAAAA/"
+      "////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAMr/////wAAAAAAAAAA/"
+      "////wEAAANa/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA"
+    }
+  }
+  HideAutomaticNames	  on
+  PhysicalModelingChecksum "2338629003"
+  PhysicalModelingParameterChecksum "4132826462"
+  PhysicalModelingProducts "Power_System_Blocks|Simscape"
+  Created		  "Fri Nov 26 20:16:17 1999"
+  Creator		  "MathWorks"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "evgeniy.selkov"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Fri Aug 02 14:36:54 2024"
+  RTWModifiedTimeStamp	  644508831
+  ModelVersionFormat	  "1.%<AutoIncrement:136>"
+  SampleTimeColors	  off
+  SampleTimeAnnotations	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowAllPropagatedSignalLabels	off
+  PortDataTypeDisplayFormat "AliasTypeOnly"
+  ShowEditTimeErrors	  on
+  ShowEditTimeWarnings	  on
+  ShowEditTimeAdvisorChecks off
+  ShowPortUnits		  off
+  ShowDesignRanges	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowSignalResolutionIcons on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  VariantCondition	  off
+  ShowSubsystemDomainSpec off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  ShowVisualizeInsertedRTB on
+  ShowMarkup		  on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  on
+  BlockDescriptionStringDataTip	off
+  BlockVariantConditionDataTip off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  FunctionConnectors	  off
+  BrowserLookUnderMasks	  off
+  MultiThreadCoSim	  on
+  SimulationMode	  "normal"
+  VisualizeLoggedSignalsWhenLoggingToFile off
+  PauseTimes		  "5"
+  NumberOfSteps		  1
+  SnapshotBufferSize	  10
+  SnapshotInterval	  10
+  NumberOfLastSnapshots	  0
+  EnablePacing		  off
+  PacingRate		  1
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  Object {
+    $PropName		    "DataLoggingOverride"
+    $ObjectID		    7
+    $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
+    model_		    "ModelRitm"
+    Array {
+      Type		      "Cell"
+      Dimension		      1
+      Cell		      "ModelRitm"
+      PropName		      "logAsSpecifiedByModels_"
+    }
+    Array {
+      Type		      "Cell"
+      Dimension		      1
+      Cell		      ""
+      PropName		      "logAsSpecifiedByModelsSSIDs_"
+    }
+  }
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "oneshot"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  off
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock off
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  OrderedModelArguments	  on
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSet {
+      $ObjectID		      8
+      Version		      "1.18.1"
+      DisabledProps	      []
+      Description	      ""
+      Array {
+	Type			"Handle"
+	Dimension		10
+	Simulink.SolverCC {
+	  $ObjectID		  9
+	  Version		  "1.18.1"
+	  DisabledProps		  []
+	  Description		  ""
+	  StartTime		  "0.0"
+	  StopTime		  "1"
+	  AbsTol		  "auto"
+	  AutoScaleAbsTol	  on
+	  FixedStep		  "1/fd/10"
+	  InitialStep		  "auto"
+	  MaxOrder		  5
+	  ZcThreshold		  "auto"
+	  ConsecutiveZCsStepRelTol "10*128*eps"
+	  MaxConsecutiveZCs	  "1000"
+	  ExtrapolationOrder	  4
+	  NumberNewtonIterations  1
+	  MaxStep		  "100e-6"
+	  MinStep		  "auto"
+	  MaxConsecutiveMinStep	  "1"
+	  RelTol		  "1e-6"
+	  EnableMultiTasking	  on
+	  ConcurrentTasks	  off
+	  Solver		  "ode45"
+	  SolverName		  "ode45"
+	  SolverJacobianMethodControl "auto"
+	  ShapePreserveControl	  "DisableAll"
+	  ZeroCrossControl	  "UseLocalSettings"
+	  ZeroCrossAlgorithm	  "Nonadaptive"
+	  AlgebraicLoopSolver	  "TrustRegion"
+	  SolverInfoToggleStatus  off
+	  IsAutoAppliedInSIP	  off
+	  SolverResetMethod	  "Fast"
+	  PositivePriorityOrder	  off
+	  AutoInsertRateTranBlk	  off
+	  SampleTimeConstraint	  "Unconstrained"
+	  InsertRTBMode		  "Whenever possible"
+	  SampleTimeProperty	  []
+	  DecoupledContinuousIntegration off
+	  MinimalZcImpactIntegration off
+	}
+	Simulink.DataIOCC {
+	  $ObjectID		  10
+	  Version		  "1.18.1"
+	  DisabledProps		  []
+	  Description		  ""
+	  Decimation		  "1"
+	  ExternalInput		  "[t, u]"
+	  FinalStateName	  "xFinal"
+	  InitialState		  "xInitial"
+	  LimitDataPoints	  off
+	  MaxDataPoints		  "1000"
+	  LoadExternalInput	  off
+	  LoadInitialState	  off
+	  SaveFinalState	  off
+	  SaveCompleteFinalSimState off
+	  SaveFormat		  "Array"
+	  SignalLoggingSaveFormat "ModelDataLogs"
+	  SaveOutput		  on
+	  SaveState		  off
+	  SignalLogging		  on
+	  DSMLogging		  on
+	  InspectSignalLogs	  off
+	  VisualizeSimOutput	  on
+	  StreamToWorkspace	  off
+	  StreamVariableName	  "streamout"
+	  SaveTime		  on
+	  ReturnWorkspaceOutputs  off
+	  StateSaveName		  "xout"
+	  TimeSaveName		  "tout"
+	  OutputSaveName	  "yout"
+	  SignalLoggingName	  "sigsOut"
+	  DSMLoggingName	  "dsmout"
+	  OutputOption		  "RefineOutputTimes"
+	  OutputTimes		  "[]"
+	  ReturnWorkspaceOutputsName "out"
+	  Refine		  "1"
+	  LoggingToFile		  off
+	  DatasetSignalFormat	  "timeseries"
+	  LoggingFileName	  "out.mat"
+	  LoggingIntervals	  "[-inf, inf]"
+	}
+	Simulink.OptimizationCC {
+	  $ObjectID		  11
+	  Version		  "1.18.1"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    8
+	    Cell		    "ZeroExternalMemoryAtStartup"
+	    Cell		    "ZeroInternalMemoryAtStartup"
+	    Cell		    "NoFixptDivByZeroProtection"
+	    Cell		    "OptimizeModelRefInitCode"
+	    Cell		    "BooleansAsBitfields"
+	    Cell		    "PassReuseOutputArgsAs"
+	    Cell		    "PassReuseOutputArgsThreshold"
+	    Cell		    "UseSpecifiedMinMax"
+	    PropName		    "DisabledProps"
+	  }
+	  Description		  ""
+	  BlockReduction	  off
+	  BooleanDataType	  off
+	  ConditionallyExecuteInputs on
+	  DefaultParameterBehavior "Tunable"
+	  UseDivisionForNetSlopeComputation "off"
+	  UseFloatMulNetSlope	  off
+	  DefaultUnderspecifiedDataType	"double"
+	  UseSpecifiedMinMax	  off
+	  InlineInvariantSignals  off
+	  OptimizeBlockIOStorage  on
+	  BufferReuse		  on
+	  EnhancedBackFolding	  off
+	  CachingGlobalReferences off
+	  GlobalBufferReuse	  on
+	  StrengthReduction	  off
+	  AdvancedOptControl	  ""
+	  ExpressionFolding	  on
+	  BooleansAsBitfields	  off
+	  BitfieldContainerType	  "uint_T"
+	  EnableMemcpy		  on
+	  MemcpyThreshold	  64
+	  PassReuseOutputArgsAs	  "Structure reference"
+	  PassReuseOutputArgsThreshold 12
+	  ExpressionDepthLimit	  2147483647
+	  LocalBlockOutputs	  on
+	  RollThreshold		  5
+	  StateBitsets		  off
+	  DataBitsets		  off
+	  ActiveStateOutputEnumStorageType "Native Integer"
+	  ZeroExternalMemoryAtStartup on
+	  ZeroInternalMemoryAtStartup on
+	  InitFltsAndDblsToZero	  on
+	  NoFixptDivByZeroProtection off
+	  EfficientFloat2IntCast  off
+	  EfficientMapNaN2IntZero off
+	  LifeSpan		  "inf"
+	  MaxStackSize		  "Inherit from target"
+	  BufferReusableBoundary  on
+	  SimCompilerOptimization "off"
+	  AccelVerboseBuild	  off
+	  OptimizeBlockOrder	  "off"
+	  OptimizeDataStoreBuffers on
+	  BusAssignmentInplaceUpdate on
+	  DifferentSizesBufferReuse off
+	  OptimizationLevel	  "level2"
+	  OptimizationPriority	  "Balanced"
+	  OptimizationCustomize	  on
+	  UseRowMajorAlgorithm	  off
+	  LabelGuidedReuse	  off
+	}
+	Simulink.DebuggingCC {
+	  $ObjectID		  12
+	  Version		  "1.18.1"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    1
+	    Cell		    "UseOnlyExistingSharedCode"
+	    PropName		    "DisabledProps"
+	  }
+	  Description		  ""
+	  RTPrefix		  "error"
+	  ConsistencyChecking	  "none"
+	  ArrayBoundsChecking	  "none"
+	  SignalInfNanChecking	  "none"
+	  StringTruncationChecking "error"
+	  SignalRangeChecking	  "none"
+	  ReadBeforeWriteMsg	  "UseLocalSettings"
+	  WriteAfterWriteMsg	  "UseLocalSettings"
+	  WriteAfterReadMsg	  "UseLocalSettings"
+	  AlgebraicLoopMsg	  "warning"
+	  ArtificialAlgebraicLoopMsg "warning"
+	  SaveWithDisabledLinksMsg "warning"
+	  SaveWithParameterizedLinksMsg	"none"
+	  CheckSSInitialOutputMsg on
+	  UnderspecifiedInitializationDetection	"Classic"
+	  MergeDetectMultiDrivingBlocksExec "none"
+	  CheckExecutionContextPreStartOutputMsg on
+	  CheckExecutionContextRuntimeOutputMsg	on
+	  SignalResolutionControl "TryResolveAllWithWarning"
+	  BlockPriorityViolationMsg "warning"
+	  MinStepSizeMsg	  "warning"
+	  TimeAdjustmentMsg	  "none"
+	  MaxConsecutiveZCsMsg	  "error"
+	  MaskedZcDiagnostic	  "warning"
+	  IgnoredZcDiagnostic	  "warning"
+	  SolverPrmCheckMsg	  "none"
+	  InheritedTsInSrcMsg	  "warning"
+	  MultiTaskDSMMsg	  "warning"
+	  MultiTaskCondExecSysMsg "none"
+	  MultiTaskRateTransMsg	  "error"
+	  SingleTaskRateTransMsg  "none"
+	  TasksWithSamePriorityMsg "warning"
+	  ExportedTasksRateTransMsg "none"
+	  SigSpecEnsureSampleTimeMsg "none"
+	  CheckMatrixSingularityMsg "none"
+	  IntegerOverflowMsg	  "warning"
+	  Int32ToFloatConvMsg	  "warning"
+	  ParameterDowncastMsg	  "error"
+	  ParameterOverflowMsg	  "error"
+	  ParameterUnderflowMsg	  "none"
+	  ParameterPrecisionLossMsg "warning"
+	  ParameterTunabilityLossMsg "warning"
+	  FixptConstUnderflowMsg  "none"
+	  FixptConstOverflowMsg	  "none"
+	  FixptConstPrecisionLossMsg "none"
+	  UnderSpecifiedDataTypeMsg "none"
+	  UnnecessaryDatatypeConvMsg "none"
+	  VectorMatrixConversionMsg "none"
+	  InvalidFcnCallConnMsg	  "error"
+	  FcnCallInpInsideContextMsg "warning"
+	  SignalLabelMismatchMsg  "none"
+	  UnconnectedInputMsg	  "none"
+	  UnconnectedOutputMsg	  "none"
+	  UnconnectedLineMsg	  "none"
+	  UseOnlyExistingSharedCode "error"
+	  SFcnCompatibilityMsg	  "none"
+	  FrameProcessingCompatibilityMsg "error"
+	  UniqueDataStoreMsg	  "none"
+	  BusObjectLabelMismatch  "warning"
+	  RootOutportRequireBusObject "warning"
+	  AssertControl		  "UseLocalSettings"
+	  AllowSymbolicDim	  on
+	  RowMajorDimensionSupport off
+	  ModelReferenceIOMsg	  "none"
+	  ModelReferenceMultiInstanceNormalModeStructChecksumCheck "error"
+	  ModelReferenceVersionMismatchMessage "none"
+	  ModelReferenceIOMismatchMessage "none"
+	  UnknownTsInhSupMsg	  "warning"
+	  ModelReferenceDataLoggingMessage "warning"
+	  ModelReferenceSymbolNameMessage "warning"
+	  ModelReferenceExtraNoncontSigs "error"
+	  StateNameClashWarn	  "warning"
+	  SimStateInterfaceChecksumMismatchMsg "warning"
+	  SimStateOlderReleaseMsg "error"
+	  ChecksumConsistencyForSSReuse	"none"
+	  LibraryContextMissingDiagnostic "warning"
+	  MatchCodeGenerationContextForUpdateDiagram "none"
+	  InitInArrayFormatMsg	  "warning"
+	  StrictBusMsg		  "ErrorLevel1"
+	  BusNameAdapt		  "WarnAndRepair"
+	  NonBusSignalsTreatedAsBus "none"
+	  SymbolicDimMinMaxWarning "warning"
+	  LossOfSymbolicDimsSimulationWarning "warning"
+	  LossOfSymbolicDimsCodeGenerationWarning "error"
+	  SymbolicDimsDataTypeCodeGenerationDiagnostic "error"
+	  BlockIODiagnostic	  "none"
+	  SFUnusedDataAndEventsDiag "warning"
+	  SFUnexpectedBacktrackingDiag "warning"
+	  SFInvalidInputDataAccessInChartInitDiag "warning"
+	  SFNoUnconditionalDefaultTransitionDiag "warning"
+	  SFTransitionOutsideNaturalParentDiag "warning"
+	  SFUnreachableExecutionPathDiag "warning"
+	  SFUndirectedBroadcastEventsDiag "warning"
+	  SFTransitionActionBeforeConditionDiag	"warning"
+	  SFOutputUsedAsStateInMooreChartDiag "error"
+	  SFTemporalDelaySmallerThanSampleTimeDiag "warning"
+	  SFSelfTransitionDiag	  "warning"
+	  SFExecutionAtInitializationDiag "none"
+	  SFMachineParentedDataDiag "warning"
+	  IntegerSaturationMsg	  "warning"
+	  AllowedUnitSystems	  "all"
+	  UnitsInconsistencyMsg	  "warning"
+	  AllowAutomaticUnitConversions	on
+	  RCSCRenamedMsg	  "warning"
+	  RCSCObservableMsg	  "warning"
+	  ForceCombineOutputUpdateInSim	off
+	  UnitDatabase		  ""
+	  UnderSpecifiedDimensionMsg "none"
+	}
+	Simulink.HardwareCC {
+	  $ObjectID		  13
+	  Version		  "1.18.1"
+	  DisabledProps		  []
+	  Description		  ""
+	  ProdBitPerChar	  8
+	  ProdBitPerShort	  16
+	  ProdBitPerInt		  32
+	  ProdBitPerLong	  32
+	  ProdBitPerLongLong	  64
+	  ProdBitPerFloat	  32
+	  ProdBitPerDouble	  64
+	  ProdBitPerPointer	  32
+	  ProdBitPerSizeT	  32
+	  ProdBitPerPtrDiffT	  32
+	  ProdLargestAtomicInteger "Char"
+	  ProdLargestAtomicFloat  "None"
+	  ProdIntDivRoundTo	  "Undefined"
+	  ProdEndianess		  "Unspecified"
+	  ProdWordSize		  32
+	  ProdShiftRightIntArith  on
+	  ProdLongLongMode	  off
+	  ProdHWDeviceType	  "Specified"
+	  TargetBitPerChar	  8
+	  TargetBitPerShort	  16
+	  TargetBitPerInt	  32
+	  TargetBitPerLong	  32
+	  TargetBitPerLongLong	  64
+	  TargetBitPerFloat	  32
+	  TargetBitPerDouble	  64
+	  TargetBitPerPointer	  32
+	  TargetBitPerSizeT	  32
+	  TargetBitPerPtrDiffT	  32
+	  TargetLargestAtomicInteger "Char"
+	  TargetLargestAtomicFloat "None"
+	  TargetShiftRightIntArith on
+	  TargetLongLongMode	  off
+	  TargetIntDivRoundTo	  "Undefined"
+	  TargetEndianess	  "Unspecified"
+	  TargetWordSize	  32
+	  TargetPreprocMaxBitsSint 32
+	  TargetPreprocMaxBitsUint 32
+	  TargetHWDeviceType	  "Specified"
+	  TargetUnknown		  on
+	  ProdEqTarget		  on
+	  UseEmbeddedCoderFeatures on
+	  UseSimulinkCoderFeatures on
+	}
+	Simulink.ModelReferenceCC {
+	  $ObjectID		  14
+	  Version		  "1.18.1"
+	  DisabledProps		  []
+	  Description		  ""
+	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  EnableRefExpFcnMdlSchedulingChecks on
+	  CheckModelReferenceTargetMessage "error"
+	  EnableParallelModelReferenceBuilds off
+	  ParallelModelReferenceErrorOnInvalidPool on
+	  ParallelModelReferenceMATLABWorkerInit "None"
+	  ModelReferenceNumInstancesAllowed "Multi"
+	  PropagateVarSize	  "Infer from blocks in model"
+	  ModelDependencies	  ""
+	  ModelReferencePassRootInputsByReference on
+	  ModelReferenceMinAlgLoopOccurrences off
+	  PropagateSignalLabelsOutOfModel off
+	  SupportModelReferenceSimTargetCustomCode off
+	}
+	Simulink.SFSimCC {
+	  $ObjectID		  15
+	  Version		  "1.18.1"
+	  DisabledProps		  []
+	  Description		  ""
+	  SimCustomSourceCode	  ""
+	  SimCustomHeaderCode	  ""
+	  SimCustomInitializer	  ""
+	  SimCustomTerminator	  ""
+	  SimReservedNameArray	  []
+	  SimUserSources	  ""
+	  SimUserIncludeDirs	  ""
+	  SimUserLibraries	  ""
+	  SimUserDefines	  ""
+	  SimCustomCompilerFlags  ""
+	  SimCustomLinkerFlags	  ""
+	  SFSimEcho		  on
+	  SimCtrlC		  on
+	  SimIntegrity		  on
+	  SimUseLocalCustomCode	  off
+	  SimParseCustomCode	  on
+	  SimAnalyzeCustomCode	  off
+	  SimBuildMode		  "sf_incremental_build"
+	  SimGenImportedTypeDefs  off
+	  ModelFunctionsGlobalVisibility "on"
+	  CompileTimeRecursionLimit 50
+	  EnableRuntimeRecursion  on
+	  MATLABDynamicMemAlloc	  on
+	  MATLABDynamicMemAllocThreshold 65536
+	  CustomCodeFunctionArrayLayout	[]
+	  DefaultCustomCodeFunctionArrayLayout "NotSpecified"
+	}
+	Simulink.RTWCC {
+	  $BackupClass		  "Simulink.RTWCC"
+	  $ObjectID		  16
+	  Version		  "1.18.1"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    16
+	    Cell		    "IncludeHyperlinkInReport"
+	    Cell		    "GenerateTraceInfo"
+	    Cell		    "GenerateTraceReport"
+	    Cell		    "GenerateTraceReportSl"
+	    Cell		    "GenerateTraceReportSf"
+	    Cell		    "GenerateTraceReportEml"
+	    Cell		    "PortableWordSizes"
+	    Cell		    "GenerateWebview"
+	    Cell		    "GenerateCodeMetricsReport"
+	    Cell		    "GenerateCodeReplacementReport"
+	    Cell		    "GenerateMissedCodeReplacementReport"
+	    Cell		    "GenerateErtSFunction"
+	    Cell		    "CreateSILPILBlock"
+	    Cell		    "CodeExecutionProfiling"
+	    Cell		    "CodeProfilingSaveOptions"
+	    Cell		    "CodeProfilingInstrumentation"
+	    PropName		    "DisabledProps"
+	  }
+	  SystemTargetFile	  "grt.tlc"
+	  HardwareBoard		  "None"
+	  TLCOptions		  ""
+	  GenCodeOnly		  off
+	  MakeCommand		  "make_rtw"
+	  GenerateMakefile	  on
+	  PackageGeneratedCodeAndArtifacts off
+	  PackageName		  ""
+	  TemplateMakefile	  "grt_default_tmf"
+	  PostCodeGenCommand	  ""
+	  Description		  ""
+	  GenerateReport	  off
+	  RTWVerbose		  on
+	  RetainRTWFile		  off
+	  RTWBuildHooks		  []
+	  ProfileTLC		  off
+	  TLCDebug		  off
+	  TLCCoverage		  off
+	  TLCAssert		  off
+	  RTWUseLocalCustomCode	  off
+	  RTWUseSimCustomCode	  off
+	  CustomSourceCode	  ""
+	  CustomHeaderCode	  ""
+	  CustomInclude		  ""
+	  CustomSource		  ""
+	  CustomLibrary		  ""
+	  CustomDefine		  ""
+	  CustomBLASCallback	  ""
+	  CustomLAPACKCallback	  ""
+	  CustomFFTCallback	  ""
+	  CustomInitializer	  ""
+	  CustomTerminator	  ""
+	  Toolchain		  "Automatically locate an installed toolchain"
+	  BuildConfiguration	  "Faster Builds"
+	  CustomToolchainOptions  []
+	  IncludeHyperlinkInReport off
+	  LaunchReport		  off
+	  PortableWordSizes	  off
+	  CreateSILPILBlock	  "None"
+	  CodeExecutionProfiling  off
+	  CodeExecutionProfileVariable "executionProfile"
+	  CodeProfilingSaveOptions "SummaryOnly"
+	  CodeProfilingInstrumentation "off"
+	  SILDebugging		  off
+	  TargetLang		  "C"
+	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
+	  GenerateTraceInfo	  off
+	  GenerateTraceReport	  off
+	  GenerateTraceReportSl	  off
+	  GenerateTraceReportSf	  off
+	  GenerateTraceReportEml  off
+	  GenerateWebview	  off
+	  GenerateCodeMetricsReport off
+	  GenerateCodeReplacementReport	off
+	  GenerateMissedCodeReplacementReport off
+	  RTWCompilerOptimization "off"
+	  ObjectivePriorities	  []
+	  RTWCustomCompilerOptimizations ""
+	  CheckMdlBeforeBuild	  "Off"
+	  SharedConstantsCachingThreshold 1024
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    Simulink.CodeAppCC {
+	      $ObjectID		      17
+	      Version		      "1.18.1"
+	      Array {
+		Type			"Cell"
+		Dimension		28
+		Cell			"IgnoreCustomStorageClasses"
+		Cell			"InsertBlockDesc"
+		Cell			"SFDataObjDesc"
+		Cell			"SimulinkDataObjDesc"
+		Cell			"DefineNamingRule"
+		Cell			"SignalNamingRule"
+		Cell			"ParamNamingRule"
+		Cell			"InlinedPrmAccess"
+		Cell			"CustomSymbolStr"
+		Cell			"IgnoreTestpoints"
+		Cell			"BlockCommentType"
+		Cell			"InsertPolySpaceComments"
+		Cell			"MATLABFcnDesc"
+		Cell			"InternalIdentifier"
+		Cell			"CustomSymbolStrGlobalVar"
+		Cell			"CustomSymbolStrType"
+		Cell			"CustomSymbolStrField"
+		Cell			"CustomSymbolStrFcn"
+		Cell			"CustomSymbolStrModelFcn"
+		Cell			"CustomSymbolStrFcnArg"
+		Cell			"CustomSymbolStrBlkIO"
+		Cell			"CustomSymbolStrTmpVar"
+		Cell			"CustomSymbolStrMacro"
+		Cell			"CustomSymbolStrUtil"
+		Cell			"CustomSymbolStrEmxType"
+		Cell			"CustomSymbolStrEmxFcn"
+		Cell			"CustomUserTokenString"
+		Cell			"ReqsInCode"
+		PropName		"DisabledProps"
+	      }
+	      Description	      ""
+	      Comment		      ""
+	      ForceParamTrailComments off
+	      GenerateComments	      on
+	      CommentStyle	      "Auto"
+	      IgnoreCustomStorageClasses on
+	      IgnoreTestpoints	      off
+	      MaxIdLength	      31
+	      PreserveName	      off
+	      PreserveNameWithParent  off
+	      ShowEliminatedStatement off
+	      OperatorAnnotations     off
+	      SimulinkDataObjDesc     off
+	      SFDataObjDesc	      off
+	      MATLABFcnDesc	      off
+	      MangleLength	      1
+	      SharedChecksumLength    8
+	      CustomSymbolStrGlobalVar "$R$N$M"
+	      CustomSymbolStrType     "$N$R$M_T"
+	      CustomSymbolStrField    "$N$M"
+	      CustomSymbolStrFcn      "$R$N$M$F"
+	      CustomSymbolStrModelFcn "$R$N"
+	      CustomSymbolStrFcnArg   "rt$I$N$M"
+	      CustomSymbolStrBlkIO    "rtb_$N$M"
+	      CustomSymbolStrTmpVar   "$N$M"
+	      CustomSymbolStrMacro    "$R$N$M"
+	      CustomSymbolStrUtil     "$N$C"
+	      CustomSymbolStrEmxType  "emxArray_$M$N"
+	      CustomSymbolStrEmxFcn   "emx$M$N"
+	      CustomUserTokenString   ""
+	      CustomCommentsFcn	      ""
+	      DefineNamingRule	      "None"
+	      DefineNamingFcn	      ""
+	      ParamNamingRule	      "None"
+	      ParamNamingFcn	      ""
+	      SignalNamingRule	      "None"
+	      SignalNamingFcn	      ""
+	      InsertBlockDesc	      off
+	      InsertPolySpaceComments off
+	      SimulinkBlockComments   on
+	      BlockCommentType	      "BlockPathComment"
+	      StateflowObjectComments on
+	      MATLABSourceComments    off
+	      EnableCustomComments    off
+	      InternalIdentifierFile  ""
+	      InternalIdentifier      "Shortened"
+	      InlinedPrmAccess	      "Literals"
+	      ReqsInCode	      off
+	      UseSimReservedNames     off
+	      ReservedNameArray	      []
+	    }
+	    Simulink.GRTTargetCC {
+	      $BackupClass	      "Simulink.TargetCC"
+	      $ObjectID		      18
+	      Version		      "1.18.1"
+	      Array {
+		Type			"Cell"
+		Dimension		16
+		Cell			"IncludeMdlTerminateFcn"
+		Cell			"PreserveStateflowLocalDataDimensions"
+		Cell			"SuppressErrorStatus"
+		Cell			"ERTCustomFileBanners"
+		Cell			"GenerateSampleERTMain"
+		Cell			"SupportContinuousTime"
+		Cell			"PurelyIntegerCode"
+		Cell			"SupportNonInlinedSFcns"
+		Cell			"SupportComplex"
+		Cell			"SupportAbsoluteTime"
+		Cell			"GenerateAllocFcn"
+		Cell			"ExistingSharedCode"
+		Cell			"GenerateTestInterfaces"
+		Cell			"ModelStepFunctionPrototypeControlCompliant"
+		Cell			"RemoveDisableFunc"
+		Cell			"RemoveResetFunc"
+		PropName		"DisabledProps"
+	      }
+	      Description	      ""
+	      TargetFcnLib	      "ansi_tfl_tmw.mat"
+	      TargetLibSuffix	      ""
+	      TargetPreCompLibLocation ""
+	      GenFloatMathFcnCalls    "NOT IN USE"
+	      TargetLangStandard      "C89/C90 (ANSI)"
+	      CodeReplacementLibrary  "None"
+	      UtilityFuncGeneration   "Auto"
+	      MultiwordTypeDef	      "System defined"
+	      MultiwordLength	      2048
+	      DynamicStringBufferSize 256
+	      GenerateFullHeader      on
+	      InferredTypesCompatibility off
+	      ExistingSharedCode      ""
+	      GenerateSampleERTMain   off
+	      GenerateTestInterfaces  off
+	      ModelReferenceCompliant on
+	      ParMdlRefBuildCompliant on
+	      CompOptLevelCompliant   on
+	      ConcurrentExecutionCompliant on
+	      IncludeMdlTerminateFcn  on
+	      GeneratePreprocessorConditionals "Disable all"
+	      CombineOutputUpdateFcns off
+	      CombineSignalStateStructs	off
+	      GroupInternalDataByFunction off
+	      SuppressErrorStatus     off
+	      IncludeFileDelimiter    "Auto"
+	      ERTCustomFileBanners    off
+	      SupportAbsoluteTime     on
+	      LogVarNameModifier      "rt_"
+	      MatFileLogging	      on
+	      MultiInstanceERTCode    off
+	      CodeInterfacePackaging  "Nonreusable function"
+	      PurelyIntegerCode	      off
+	      SupportNonFinite	      on
+	      SupportComplex	      on
+	      SupportContinuousTime   on
+	      SupportNonInlinedSFcns  on
+	      RemoveDisableFunc	      off
+	      RemoveResetFunc	      off
+	      SupportVariableSizeSignals off
+	      ParenthesesLevel	      "Nominal"
+	      CastingMode	      "Nominal"
+	      PreserveStateflowLocalDataDimensions off
+	      MATLABClassNameForMDSCustomization "Simulink.SoftwareTarget.GRTCustomization"
+	      ModelStepFunctionPrototypeControlCompliant off
+	      CPPClassGenCompliant    on
+	      AutosarCompliant	      off
+	      MDXCompliant	      off
+	      GRTInterface	      on
+	      GenerateAllocFcn	      off
+	      UseToolchainInfoCompliant	on
+	      GenerateSharedConstants on
+	      CoderGroups	      []
+	      AccessMethods	      []
+	      LookupTableObjectStructAxisOrder "1,2,3,4,..."
+	      LUTObjectStructOrderExplicitValues "Size,Breakpoints,Table"
+	      LUTObjectStructOrderEvenSpacing "Size,Breakpoints,Table"
+	      ArrayLayout	      "Column-major"
+	      UnsupportedSFcnMsg      "error"
+	      ERTHeaderFileRootName   "$R$E"
+	      ERTSourceFileRootName   "$R$E"
+	      ERTDataFileRootName     "$R_data"
+	      UseMalloc		      off
+	      ExtMode		      off
+	      ExtModeStaticAlloc      off
+	      ExtModeTesting	      off
+	      ExtModeStaticAllocSize  1000000
+	      ExtModeTransport	      0
+	      ExtModeMexFile	      "ext_comm"
+	      ExtModeMexArgs	      ""
+	      ExtModeIntrfLevel	      "Level1"
+	      RTWCAPISignals	      off
+	      RTWCAPIParams	      off
+	      RTWCAPIStates	      off
+	      RTWCAPIRootIO	      off
+	      GenerateASAP2	      off
+	      MultiInstanceErrorCode  "Error"
+	    }
+	    PropName		    "Components"
+	  }
+	}
+	SlCovCC.ConfigComp {
+	  $ObjectID		  19
+	  Version		  "1.18.1"
+	  DisabledProps		  []
+	  Description		  "Simulink Coverage Configuration Component"
+	  Name			  "Simulink Coverage"
+	  CovEnable		  off
+	  CovScope		  "EntireSystem"
+	  CovIncludeTopModel	  on
+	  RecordCoverage	  off
+	  CovPath		  "/"
+	  CovSaveName		  "covdata"
+	  CovCompData		  ""
+	  CovMetricSettings	  "dw"
+	  CovFilter		  ""
+	  CovHTMLOptions	  ""
+	  CovNameIncrementing	  off
+	  CovHtmlReporting	  on
+	  CovForceBlockReductionOff on
+	  CovEnableCumulative	  on
+	  CovSaveCumulativeToWorkspaceVar on
+	  CovSaveSingleToWorkspaceVar on
+	  CovCumulativeVarName	  "covCumulativeData"
+	  CovCumulativeReport	  off
+	  CovSaveOutputData	  on
+	  CovOutputDir		  "slcov_output/$ModelName$"
+	  CovDataFileName	  "$ModelName$_cvdata"
+	  CovShowResultsExplorer  on
+	  CovReportOnPause	  on
+	  CovModelRefEnable	  "off"
+	  CovModelRefExcluded	  ""
+	  CovExternalEMLEnable	  off
+	  CovSFcnEnable		  on
+	  CovBoundaryAbsTol	  1e-05
+	  CovBoundaryRelTol	  0.01
+	  CovUseTimeInterval	  off
+	  CovStartTime		  0
+	  CovStopTime		  0
+	  CovMcdcMode		  "Masking"
+	}
+	SSC.SimscapeCC {
+	  $ObjectID		  20
+	  Version		  "1.0"
+	  DisabledProps		  []
+	  Description		  ""
+	  Name			  "Simscape"
+	  EditingMode		  "Full"
+	  ExplicitSolverDiagnosticOptions "warning"
+	  GlobalZcOffDiagnosticOptions "warning"
+	  SimscapeNormalizeSystem on
+	  SimscapeNominalValues	  "[{\"value\":\"1\",\"unit\":\"A\"},{\"value\":\"1\",\"unit\":\"bar\"},{\"value\":\"1\",\"un"
+	  "it\":\"cm^2\"},{\"value\":\"1\",\"unit\":\"cm^3/s\"},{\"value\":\"1\",\"unit\":\"kJ/kg\"},{\"value\":\"1\",\"unit\""
+	  ":\"kW\"},{\"value\":\"1\",\"unit\":\"l\"},{\"value\":\"1\",\"unit\":\"N\"},{\"value\":\"1\",\"unit\":\"N*m\"},{\"va"
+	  "lue\":\"1\",\"unit\":\"V\"}]"
+	  SimscapeLogType	  "none"
+	  SimscapeLogSimulationStatistics off
+	  SimscapeLogToSDI	  off
+	  SimscapeLogOpenViewer	  off
+	  SimscapeLogName	  "simlog"
+	  SimscapeLogDecimation	  1
+	  SimscapeLogLimitData	  on
+	  SimscapeLogDataHistory  5000
+	  SimscapeUseOperatingPoints off
+	  SimscapeOperatingPoint  ""
+	  SelectedTab		  ""
+	}
+	PropName		"Components"
+      }
+      Name		      "Configuration"
+      ExtraOptions	      ""
+      CurrentDlgPage	      "Simscape"
+      ConfigPrmDlgPosition    [ 200, 197, 1080, 827 ]
+    }
+    PropName		    "ConfigurationSets"
+  }
+  Simulink.ConfigSet {
+    $PropName		    "ActiveConfigurationSet"
+    $ObjectID		    8
+  }
+  Object {
+    $PropName		    "DataTransfer"
+    $ObjectID		    21
+    $ClassName		    "Simulink.GlobalDataTransfer"
+    DefaultTransitionBetweenSyncTasks "Ensure deterministic transfer (maximum delay)"
+    DefaultTransitionBetweenAsyncTasks "Ensure data integrity only"
+    DefaultTransitionBetweenContTasks "Ensure deterministic transfer (minimum delay)"
+    DefaultExtrapolationMethodBetweenContTasks "None"
+    AutoInsertRateTranBlk   [0]
+  }
+  ExplicitPartitioning	  off
+  BlockDefaults {
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+    HideAutomaticName	    on
+    BlockRotation	    0
+    BlockMirror		    off
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    MarkupType		    "model"
+    UseDisplayTextAsClickCallback off
+    AnnotationType	    "note_annotation"
+    FixedHeight		    off
+    FixedWidth		    off
+    Interpreter		    "off"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  MaskDefaults {
+    SelfModifiable	    "off"
+    IconFrame		    "on"
+    IconOpaque		    "opaque"
+    RunInitForIconRedraw    "analyze"
+    IconRotate		    "none"
+    PortRotate		    "default"
+    IconUnits		    "autoscale"
+  }
+  MaskParameterDefaults {
+    Evaluate		    "on"
+    Tunable		    "on"
+    NeverSave		    "off"
+    Internal		    "off"
+    ReadOnly		    "off"
+    Enabled		    "on"
+    Visible		    "on"
+    ToolTip		    "on"
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      Scope
+      DefaultConfigurationName "Simulink.scopes.TimeScopeBlockCfg"
+    }
+    Block {
+      BlockType		      Step
+      Time		      "1"
+      Before		      "0"
+      After		      "1"
+      SampleTime	      "-1"
+      VectorParams1D	      on
+      ZeroCross		      on
+    }
+  }
+  System {
+    Name		    "ModelRitm"
+    Location		    [1912, -8, 3848, 1048]
+    Open		    on
+    PortBlocksUseCompactNotation off
+    SetExecutionDomain	    off
+    ExecutionDomainType	    "Deduce"
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+    TiledPageScale	    1
+    ShowPageBoundaries	    off
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    SIDHighWatermark	    "364"
+    Block {
+      BlockType		      Reference
+      Name		      "Controlled \nVoltage\nSource"
+      SID		      "349"
+      Ports		      [0, 0, 0, 0, 0, 1, 2]
+      Position		      [-265, 275, -225, 315]
+      ZOrder		      180
+      BlockRotation	      270
+      BlockMirror	      on
+      LibraryVersion	      "9002000.1"
+      SourceBlock	      "fl_lib/Electrical/Electrical Sources/Controlled Voltage\nSource"
+      SourceType	      "Controlled Voltage\nSource"
+      SourceProductName	      "Simscape"
+      SourceProductBaseCode   "SS"
+      LogSimulationData	      off
+      SourceFile	      "foundation.electrical.sources.controlled_voltage"
+      ComponentPath	      "foundation.electrical.sources.controlled_voltage"
+      ComponentVariants	      "foundation.electrical.sources.controlled_voltage"
+      ComponentVariantNames   "controlled_voltage"
+      ClassName		      "controlled_voltage"
+      SchemaVersion	      "1"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Controlled \nVoltage\nSource1"
+      SID		      "354"
+      Ports		      [0, 0, 0, 0, 0, 1, 2]
+      Position		      [-275, 575, -235, 615]
+      ZOrder		      190
+      BlockRotation	      270
+      BlockMirror	      on
+      LibraryVersion	      "9002000.1"
+      SourceBlock	      "fl_lib/Electrical/Electrical Sources/Controlled Voltage\nSource"
+      SourceType	      "Controlled Voltage\nSource"
+      SourceProductName	      "Simscape"
+      SourceProductBaseCode   "SS"
+      LogSimulationData	      off
+      SourceFile	      "foundation.electrical.sources.controlled_voltage"
+      ComponentPath	      "foundation.electrical.sources.controlled_voltage"
+      ComponentVariants	      "foundation.electrical.sources.controlled_voltage"
+      ComponentVariantNames   "controlled_voltage"
+      ClassName		      "controlled_voltage"
+      SchemaVersion	      "1"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Current Sensor"
+      SID		      "283"
+      Ports		      [0, 0, 0, 0, 0, 1, 2]
+      Position		      [-90, 205, -50, 245]
+      ZOrder		      30
+      LibraryVersion	      "9002000.1"
+      SourceBlock	      "fl_lib/Electrical/Electrical Sensors/Current Sensor"
+      SourceType	      "Current Sensor"
+      SourceProductName	      "Simscape"
+      SourceProductBaseCode   "SS"
+      LogSimulationData	      off
+      SourceFile	      "foundation.electrical.sensors.current"
+      ComponentPath	      "foundation.electrical.sensors.current"
+      ComponentVariants	      "foundation.electrical.sensors.current"
+      ComponentVariantNames   "current"
+      ClassName		      "current"
+      SchemaVersion	      "1"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Current Sensor1"
+      SID		      "355"
+      Ports		      [0, 0, 0, 0, 0, 1, 2]
+      Position		      [-100, 505, -60, 545]
+      ZOrder		      186
+      LibraryVersion	      "9002000.1"
+      SourceBlock	      "fl_lib/Electrical/Electrical Sensors/Current Sensor"
+      SourceType	      "Current Sensor"
+      SourceProductName	      "Simscape"
+      SourceProductBaseCode   "SS"
+      LogSimulationData	      off
+      SourceFile	      "foundation.electrical.sensors.current"
+      ComponentPath	      "foundation.electrical.sensors.current"
+      ComponentVariants	      "foundation.electrical.sensors.current"
+      ComponentVariantNames   "current"
+      ClassName		      "current"
+      SchemaVersion	      "1"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Electrical Reference"
+      SID		      "345"
+      Ports		      [0, 0, 0, 0, 0, 1]
+      Position		      [-80, 375, -60, 395]
+      ZOrder		      176
+      BlockRotation	      270
+      BlockMirror	      on
+      ShowName		      off
+      LibraryVersion	      "9002000.1"
+      SourceBlock	      "fl_lib/Electrical/Electrical Elements/Electrical Reference"
+      SourceType	      "Electrical Reference"
+      SourceProductName	      "Simscape"
+      SourceProductBaseCode   "SS"
+      LogSimulationData	      off
+      SourceFile	      "foundation.electrical.elements.reference"
+      ComponentPath	      "foundation.electrical.elements.reference"
+      ComponentVariants	      "foundation.electrical.elements.reference"
+      ComponentVariantNames   "reference"
+      ClassName		      "reference"
+      SchemaVersion	      "1"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Electrical Reference1"
+      SID		      "356"
+      Ports		      [0, 0, 0, 0, 0, 1]
+      Position		      [-90, 675, -70, 695]
+      ZOrder		      189
+      BlockRotation	      270
+      BlockMirror	      on
+      ShowName		      off
+      LibraryVersion	      "9002000.1"
+      SourceBlock	      "fl_lib/Electrical/Electrical Elements/Electrical Reference"
+      SourceType	      "Electrical Reference"
+      SourceProductName	      "Simscape"
+      SourceProductBaseCode   "SS"
+      LogSimulationData	      off
+      SourceFile	      "foundation.electrical.elements.reference"
+      ComponentPath	      "foundation.electrical.elements.reference"
+      ComponentVariants	      "foundation.electrical.elements.reference"
+      ComponentVariantNames   "reference"
+      ClassName		      "reference"
+      SchemaVersion	      "1"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Nonlinear Inductor"
+      SID		      "280"
+      Ports		      [0, 0, 0, 0, 0, 1, 1]
+      Position		      [155, 556, 195, 584]
+      ZOrder		      27
+      LibraryVersion	      "9002000.1"
+      SourceBlock	      "pe_lib/Passive Devices/Fundamental\nComponents/Nonlinear Inductor"
+      SourceType	      "Nonlinear Inductor"
+      SourceProductName	      "Simscape Power Systems"
+      SourceProductBaseCode   "PS"
+      LogSimulationData	      off
+      SourceFile	      "elec.passive.nonlinear_inductor"
+      ComponentPath	      "elec.passive.nonlinear_inductor"
+      ComponentVariants	      "elec.passive.nonlinear_inductor"
+      ClassName		      "nonlinear_inductor"
+      SchemaVersion	      "1"
+      parameterization_option "3"
+      parameterization_option_unit "1"
+      parameterization_option_conf "compiletime"
+      Nw		      "20000"
+      Nw_unit		      "1"
+      Nw_conf		      "compiletime"
+      L			      "2e-4"
+      L_unit		      "H"
+      L_conf		      "compiletime"
+      L_sat		      "1e-4"
+      L_sat_unit	      "H"
+      L_sat_conf	      "compiletime"
+      current_data	      "[0, .64, 1.28, 1.92, 2.56, 3.2]"
+      current_data_unit	      "A"
+      current_data_conf	      "compiletime"
+      magnetic_flux_data      "[0, 1.29, 2, 2.27, 2.36, 2.39] .* 1e-5"
+      magnetic_flux_data_unit "Wb"
+      magnetic_flux_data_conf "compiletime"
+      H_data		      "[0, 200, 400, 600, 800, 1000]"
+      H_data_unit	      "A/m"
+      H_data_conf	      "compiletime"
+      B_data		      "[0, .81, 1.25, 1.42, 1.48, 1.49]"
+      B_data_unit	      "T"
+      B_data_conf	      "compiletime"
+      magnetic_flux_sat	      "1.3e-05"
+      magnetic_flux_sat_unit  "Wb"
+      magnetic_flux_sat_conf  "compiletime"
+      length_effective	      "0.032"
+      length_effective_unit   "m"
+      length_effective_conf   "compiletime"
+      area_effective	      "1.6e-5"
+      area_effective_unit     "m^2"
+      area_effective_conf     "compiletime"
+      dBdH0		      "0.005"
+      dBdH0_unit	      "m*T/A"
+      dBdH0_conf	      "compiletime"
+      B1		      "1.49"
+      B1_unit		      "T"
+      B1_conf		      "compiletime"
+      H1		      "1000"
+      H1_unit		      "A/m"
+      H1_conf		      "compiletime"
+      c			      "0.1"
+      c_unit		      "1"
+      c_conf		      "compiletime"
+      K			      "200"
+      K_unit		      "A/m"
+      K_conf		      "compiletime"
+      alpha		      "1e-4"
+      alpha_unit	      "1"
+      alpha_conf	      "compiletime"
+      x0_option		      "1"
+      x0_option_unit	      "1"
+      x0_option_conf	      "compiletime"
+      i_L0		      "0"
+      i_L0_unit		      "A"
+      i_L0_conf		      "compiletime"
+      phi0		      "0"
+      phi0_unit		      "Wb"
+      phi0_conf		      "compiletime"
+      B0		      "0"
+      B0_unit		      "T"
+      B0_conf		      "compiletime"
+      H0		      "0"
+      H0_unit		      "A/m"
+      H0_conf		      "compiletime"
+      averaging_period	      "0"
+      averaging_period_unit   "s"
+      averaging_period_conf   "compiletime"
+      G_parasitic	      "1e-9"
+      G_parasitic_unit	      "1/Ohm"
+      G_parasitic_conf	      "compiletime"
+      interpolation_option    "1"
+      interpolation_option_unit	"1"
+      interpolation_option_conf	"compiletime"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Output\nVoltage"
+      SID		      "346"
+      Tag		      "PublishScope"
+      Ports		      [2]
+      Position		      [440, 181, 470, 214]
+      ZOrder		      177
+      ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(extm"
+      "gr.Configuration('Core','General UI',true,'FigureColor',[0.501960784313725 0.501960784313725 0.501960784313725])"
+      ",extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('Sources','WiredSimulink',true,'DataLoggingS"
+      "aveFormat','Array','DataLoggingLimitDataPoints',true,'DataLoggingDecimation','1'),extmgr.Configuration('Visuals'"
+      ",'Time Domain',true,'SerializedDisplays',{struct('MinYLimReal','-0.621','MaxYLimReal','6.20895','YLabelReal','',"
+      "'MinYLimMag','0.00000','MaxYLimMag','6.20895','LegendVisibility','on','XGrid',true,'YGrid',true,'PlotMagPhase',f"
+      "alse,'AxesColor',[0 0 0],'AxesTickColor',[1 1 1],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.62352"
+      "9411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.71764"
+      "7058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','Output Vo"
+      "ltage','LinePropertiesCache',{{struct('Visible','on','Color',[1 1 0],'LineStyle','-','LineWidth',1,'Marker','non"
+      "e'),struct('Visible','on','Color',[1 0 1],'LineStyle','--','LineWidth',1,'Marker','none'),struct('Color',[0 1 1]"
+      ",'LineStyle','-','LineWidth',0.5,'Marker','none','Visible','on'),struct('Color',[1 0 0],'LineStyle','-','LineWid"
+      "th',0.5,'Marker','none','Visible','on'),struct('Color',[0 1 0],'LineStyle','-','LineWidth',0.5,'Marker','none','"
+      "Visible','on'),struct('Color',[0 0 1],'LineStyle','-','LineWidth',0.5,'Marker','none','Visible','on')}},'UserDef"
+      "inedChannelNames',{{}},'NumLines',2,'LineNames',{{'i custom','i lib'}},'ShowContent',true,'Placement',1)},'Displ"
+      "ayPropertyDefaults',struct('MinYLimReal','-0.621','MaxYLimReal','6.20895','YLabelReal','','MinYLimMag','0.00000'"
+      ",'MaxYLimMag','6.20895','LegendVisibility','on','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 "
+      "0],'AxesTickColor',[1 1 1],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.41176"
+      "4705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803"
+      "921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','Output Voltage','LineProperties"
+      "Cache',{{struct('Color',[1 1 0],'LineStyle','-','LineWidth',1,'Marker','none','Visible','on'),struct('Color',[1 "
+      "0 1],'LineStyle','--','LineWidth',1,'Marker','none','Visible','on'),struct('Color',[0 1 1],'LineStyle','-','Line"
+      "Width',0.5,'Marker','none','Visible','on'),struct('Color',[1 0 0],'LineStyle','-','LineWidth',0.5,'Marker','none"
+      "','Visible','on'),struct('Color',[0 1 0],'LineStyle','-','LineWidth',0.5,'Marker','none','Visible','on'),struct("
+      "'Color',[0 0 1],'LineStyle','-','LineWidth',0.5,'Marker','none','Visible','on')}},'UserDefinedChannelNames',{{}}"
+      ",'NumLines',0,'LineNames',{{[]}},'ShowContent',true,'Placement',1)),extmgr.Configuration('Tools','Plot Navigatio"
+      "n',true,'OnceAtStop',false,'PreviousZoomMode','Pan'),extmgr.Configuration('Tools','Measurements',true,'Version',"
+      "'2018b')),'Version','2018b','Location',[1 76 1921 1039])"
+      NumInputPorts	      "2"
+      Floating		      off
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Resistor"
+      SID		      "282"
+      Ports		      [0, 0, 0, 0, 0, 1, 1]
+      Position		      [-25, 221, 15, 249]
+      ZOrder		      29
+      LibraryVersion	      "9002000.1"
+      SourceBlock	      "fl_lib/Electrical/Electrical Elements/Resistor"
+      SourceType	      "Resistor"
+      SourceProductName	      "Simscape"
+      SourceProductBaseCode   "SS"
+      LogSimulationData	      off
+      SourceFile	      "foundation.electrical.elements.resistor"
+      ComponentPath	      "foundation.electrical.elements.resistor"
+      ComponentVariants	      "foundation.electrical.elements.resistor"
+      ComponentVariantNames   "resistor"
+      ClassName		      "resistor"
+      SchemaVersion	      "1"
+      R			      "1"
+      R_unit		      "Ohm"
+      R_conf		      "compiletime"
+      i_specify		      off
+      i_priority	      "None"
+      i			      "0"
+      i_unit		      "A"
+      i_nominal_specify	      off
+      i_nominal_unit	      "A"
+      i_nominal_value	      "1"
+      v_specify		      off
+      v_priority	      "None"
+      v			      "0"
+      v_unit		      "V"
+      v_nominal_specify	      off
+      v_nominal_unit	      "V"
+      v_nominal_value	      "1"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Resistor1"
+      SID		      "358"
+      Ports		      [0, 0, 0, 0, 0, 1, 1]
+      Position		      [-35, 521, 5, 549]
+      ZOrder		      185
+      LibraryVersion	      "9002000.1"
+      SourceBlock	      "fl_lib/Electrical/Electrical Elements/Resistor"
+      SourceType	      "Resistor"
+      SourceProductName	      "Simscape"
+      SourceProductBaseCode   "SS"
+      LogSimulationData	      off
+      SourceFile	      "foundation.electrical.elements.resistor"
+      ComponentPath	      "foundation.electrical.elements.resistor"
+      ComponentVariants	      "foundation.electrical.elements.resistor"
+      ComponentVariantNames   "resistor"
+      ClassName		      "resistor"
+      SchemaVersion	      "1"
+      R			      "1"
+      R_unit		      "Ohm"
+      R_conf		      "compiletime"
+      i_specify		      off
+      i_priority	      "None"
+      i			      "0"
+      i_unit		      "A"
+      i_nominal_specify	      off
+      i_nominal_unit	      "A"
+      i_nominal_value	      "1"
+      v_specify		      off
+      v_priority	      "None"
+      v			      "0"
+      v_unit		      "V"
+      v_nominal_specify	      off
+      v_nominal_unit	      "V"
+      v_nominal_value	      "1"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Simulink-PS\nConverter"
+      SID		      "340"
+      Ports		      [1, 0, 0, 0, 0, 0, 1]
+      Position		      [-320, 357, -305, 373]
+      ZOrder		      171
+      LibraryVersion	      "4.0"
+      SourceBlock	      "nesl_utility/Simulink-PS\nConverter"
+      SourceType	      "Simulink-PS\nConverter"
+      SourceProductName	      "Simscape"
+      SourceProductBaseCode   "SS"
+      ContentPreviewEnabled   on
+      PhysicalDomain	      "network_engine_domain"
+      SubClassName	      "ps_input"
+      LeftPortType	      "input"
+      RightPortType	      "output"
+      PseudoPeriodic	      off
+      Frequencies	      "[]"
+      NoiseDistribution	      "none"
+      NoiseParameters	      "[]"
+      Unit		      "1"
+      AffineConversion	      off
+      FilteringAndDerivatives "provide"
+      SimscapeFilterOrder     "1"
+      InputFilterTimeConstant "0.001"
+      UdotUserProvided	      "0"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Solver\nConfiguration"
+      SID		      "344"
+      Ports		      [0, 0, 0, 0, 0, 0, 1]
+      Position		      [-45, 361, -15, 379]
+      ZOrder		      175
+      BlockMirror	      on
+      ShowName		      off
+      LibraryVersion	      "4.0"
+      SourceBlock	      "nesl_utility/Solver\nConfiguration"
+      SourceType	      "Solver\nConfiguration"
+      SourceProductName	      "Simscape"
+      SourceProductBaseCode   "SS"
+      ContentPreviewEnabled   off
+      PhysicalDomain	      "network_engine_domain"
+      SubClassName	      "solver"
+      LeftPortType	      "input"
+      RightPortType	      "generic"
+      Tones		      "[]"
+      Harmonics		      "[]"
+      SimulateNoise	      off
+      Profile		      off
+      UseLocalSampling	      off
+      EnableSwitchedLinearOptims on
+      FrequencyDomain	      off
+      UseCCode		      off
+      RelTol		      "0.001"
+      AbsTol		      "1e-06"
+      MinStep		      "1e-09"
+      ToWorkspace	      off
+      RevertToSquareIcSolve   off
+      NumHomotopyIterations   "100"
+      PhasorMode	      off
+      PhasorModeNumHarmonics  "1"
+      DoDC		      off
+      ResidualTolerance	      "1e-6"
+      UseLocalSolver	      on
+      LocalSolverChoice	      "NE_BACKWARD_EULER_ADVANCER"
+      LocalSolverSampleTime   ".001"
+      DoFixedCost	      on
+      MaxNonlinIter	      "3"
+      MaxModeIter	      "2"
+      LinearAlgebra	      "auto"
+      EquationFormulation     "NE_TIME_EF"
+      DelaysMemoryBudget      "2048"
+      AutomaticFiltering      on
+      FilteringTimeConstant   "0.001"
+      PartitionStorageMethod  "AS_NEEDED"
+      PartitionMemoryBudget   "1024"
+    }
+    Block {
+      BlockType		      Step
+      Name		      "Step"
+      SID		      "350"
+      Position		      [-375, 350, -345, 380]
+      ZOrder		      181
+      Time		      "0.2"
+      After		      "5"
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "i custom"
+      SID		      "339"
+      Ports		      [0, 1, 0, 0, 0, 1]
+      Position		      [0, 182, 15, 198]
+      ZOrder		      170
+      LibraryVersion	      "4.0"
+      SourceBlock	      "nesl_utility/PS-Simulink\nConverter"
+      SourceType	      "PS-Simulink\nConverter"
+      SourceProductName	      "Simscape"
+      SourceProductBaseCode   "SS"
+      ContentPreviewEnabled   on
+      PhysicalDomain	      "network_engine_domain"
+      SubClassName	      "ps_output"
+      LeftPortType	      "input"
+      RightPortType	      "output"
+      PseudoPeriodic	      off
+      Frequencies	      "[]"
+      Unit		      "1"
+      AffineConversion	      off
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "i lib"
+      SID		      "357"
+      Ports		      [0, 1, 0, 0, 0, 1]
+      Position		      [-10, 482, 5, 498]
+      ZOrder		      187
+      LibraryVersion	      "4.0"
+      SourceBlock	      "nesl_utility/PS-Simulink\nConverter"
+      SourceType	      "PS-Simulink\nConverter"
+      SourceProductName	      "Simscape"
+      SourceProductBaseCode   "SS"
+      ContentPreviewEnabled   on
+      PhysicalDomain	      "network_engine_domain"
+      SubClassName	      "ps_output"
+      LeftPortType	      "input"
+      RightPortType	      "output"
+      PseudoPeriodic	      off
+      Frequencies	      "[]"
+      Unit		      "1"
+      AffineConversion	      off
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "nonlinear_inductance1"
+      SID		      "364"
+      Ports		      [0, 0, 0, 0, 0, 1, 1]
+      Position		      [155, 255, 215, 315]
+      ZOrder		      193
+      LibraryVersion	      "9002000.1"
+      SourceBlock	      "SimscapeCustomBlocks_lib/Electrical/nonlinear_inductance"
+      SourceType	      "nonlinear_inductance"
+      LogSimulationData	      off
+      SourceFile	      "SimscapeCustomBlocks.Electrical.nonlinear_inductance"
+      ComponentPath	      "SimscapeCustomBlocks.Electrical.nonlinear_inductance"
+      ComponentVariants	      "SimscapeCustomBlocks.Electrical.nonlinear_inductance"
+      ComponentVariantNames   "nonlinear_inductance"
+      ClassName		      "nonlinear_inductance"
+      SchemaVersion	      "1"
+      Nturns		      "20000"
+      Nturns_unit	      "1"
+      Nturns_conf	      "compiletime"
+      i_vector		      "[0, .64, 1.28, 1.92, 2.56, 3.2]"
+      i_vector_unit	      "A"
+      i_vector_conf	      "compiletime"
+      phi_vector	      "[0, 1.29, 2, 2.27, 2.36, 2.39] * 1e-5"
+      phi_vector_unit	      "Wb"
+      phi_vector_conf	      "compiletime"
+      i_specify		      off
+      i_priority	      "None"
+      i			      "0"
+      i_unit		      "A"
+      i_nominal_specify	      off
+      i_nominal_unit	      "A"
+      i_nominal_value	      "1"
+      v_specify		      off
+      v_priority	      "None"
+      v			      "0"
+      v_unit		      "V"
+      v_nominal_specify	      off
+      v_nominal_unit	      "V"
+      v_nominal_value	      "1"
+      i_L_specify	      off
+      i_L_priority	      "High"
+      i_L		      "0"
+      i_L_unit		      "A"
+      i_L_nominal_specify     off
+      i_L_nominal_unit	      "A"
+      i_L_nominal_value	      "1"
+    }
+    Line {
+      LineType		      "Connection"
+      ZOrder		      213
+      SrcBlock		      "Resistor"
+      SrcPort		      LConn1
+      DstBlock		      "Current Sensor"
+      DstPort		      RConn2
+    }
+    Line {
+      LineType		      "Connection"
+      ZOrder		      270
+      SrcBlock		      "Current Sensor"
+      SrcPort		      RConn1
+      Points		      [10, 0; 0, -25]
+      DstBlock		      "i custom"
+      DstPort		      LConn1
+    }
+    Line {
+      LineType		      "Connection"
+      ZOrder		      300
+      SrcBlock		      "Simulink-PS\nConverter"
+      SrcPort		      RConn1
+      Points		      [0, 0]
+      Branch {
+	ConnectType		"DEST_DEST"
+	SrcBlock		"Controlled \nVoltage\nSource1"
+	SrcPort			RConn1
+	Points			[-25, 0; 0, -265]
+      }
+      Branch {
+	ConnectType		"DEST_SRC"
+	Points			[35, 0]
+	DstBlock		"Controlled \nVoltage\nSource"
+	DstPort			RConn1
+      }
+    }
+    Line {
+      LineType		      "Connection"
+      ZOrder		      279
+      SrcBlock		      "Electrical Reference"
+      SrcPort		      LConn1
+      Points		      [0, 0]
+      Branch {
+	ConnectType		"DEST_DEST"
+	Points			[-70, 356; 0, 4]
+	Branch {
+	  ConnectType		  "SRC_DEST"
+	  SrcBlock		  "nonlinear_inductance1"
+	  SrcPort		  RConn1
+	  Points		  [13, 0; 0, 71; -313, 0]
+	}
+	Branch {
+	  ConnectType		  "SRC_DEST"
+	  SrcBlock		  "Controlled \nVoltage\nSource"
+	  SrcPort		  RConn2
+	  Points		  [0, 24; 165, 0; 0, 2]
+	}
+      }
+      Branch {
+	ConnectType		"DEST_DEST"
+	SrcBlock		"Solver\nConfiguration"
+	SrcPort			RConn1
+	Points			[-10, 0; 0, -10]
+      }
+    }
+    Line {
+      ZOrder		      289
+      SrcBlock		      "i custom"
+      SrcPort		      1
+      DstBlock		      "Output\nVoltage"
+      DstPort		      1
+    }
+    Line {
+      LineType		      "Connection"
+      ZOrder		      299
+      SrcBlock		      "Controlled \nVoltage\nSource"
+      SrcPort		      LConn1
+      Points		      [0, -35]
+      DstBlock		      "Current Sensor"
+      DstPort		      LConn1
+    }
+    Line {
+      ZOrder		      301
+      SrcBlock		      "Step"
+      SrcPort		      1
+      DstBlock		      "Simulink-PS\nConverter"
+      DstPort		      1
+    }
+    Line {
+      LineType		      "Connection"
+      ZOrder		      342
+      SrcBlock		      "nonlinear_inductance1"
+      SrcPort		      LConn1
+      Points		      [-57, 0; 0, -50]
+      DstBlock		      "Resistor"
+      DstPort		      RConn1
+    }
+    Line {
+      LineType		      "Connection"
+      ZOrder		      15
+      SrcBlock		      "Controlled \nVoltage\nSource1"
+      SrcPort		      RConn2
+      Points		      [0, 24; 165, 0]
+      Branch {
+	ConnectType		"DEST_DEST"
+	SrcBlock		"Nonlinear Inductor"
+	SrcPort			RConn1
+	Points			[0, 84; -290, 0]
+      }
+      Branch {
+	ConnectType		"DEST_SRC"
+	DstBlock		"Electrical Reference1"
+	DstPort			LConn1
+      }
+    }
+    Line {
+      LineType		      "Connection"
+      ZOrder		      325
+      SrcBlock		      "Current Sensor1"
+      SrcPort		      RConn1
+      Points		      [10, 0; 0, -25]
+      DstBlock		      "i lib"
+      DstPort		      LConn1
+    }
+    Line {
+      LineType		      "Connection"
+      ZOrder		      327
+      SrcBlock		      "Controlled \nVoltage\nSource1"
+      SrcPort		      LConn1
+      Points		      [0, -35]
+      DstBlock		      "Current Sensor1"
+      DstPort		      LConn1
+    }
+    Line {
+      LineType		      "Connection"
+      ZOrder		      328
+      SrcBlock		      "Resistor1"
+      SrcPort		      LConn1
+      DstBlock		      "Current Sensor1"
+      DstPort		      RConn2
+    }
+    Line {
+      ZOrder		      332
+      SrcBlock		      "i lib"
+      SrcPort		      1
+      Points		      [369, 0; 0, -285]
+      DstBlock		      "Output\nVoltage"
+      DstPort		      2
+    }
+    Line {
+      LineType		      "Connection"
+      ZOrder		      339
+      SrcBlock		      "Resistor1"
+      SrcPort		      RConn1
+      Points		      [60, 0; 0, 35]
+      DstBlock		      "Nonlinear Inductor"
+      DstPort		      LConn1
+    }
+  }
+}
